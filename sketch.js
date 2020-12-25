@@ -41,9 +41,9 @@ function setup() {
 
   score = 0;
   
-  bc = createSprite(50,375,10,10);
+  bc = createSprite(50,175,10,10);
   bc.addAnimation("bg",bcImage);
-  bc.scale=5.5;
+  bc.scale=5;
   
   trex = createSprite(50,180,20,50);
   
@@ -144,10 +144,10 @@ function spawnClouds() {
     cloud.y = Math.round(random(80,120));
     cloud.addImage(cloudImage);
     cloud.scale = 0.5;
-   // cloud.velocityX = -3;
+    cloud.velocityX = -3;
     
      //assign lifetime to the variable
-    cloud.lifetime = 200;
+    cloud.lifetime = 450;
     
     //adjust the depth
     cloud.depth = trex.depth;
